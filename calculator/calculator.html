@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            background-color: aqua;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        
+        }
+    
+        .inner{
+
+            background-color: black;
+            padding: 25px 25px;
+            border: 2px solid black;
+
+        }
+        input{
+            border: 2px solid orangered;
+            border: none;
+            width: 340px;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+            margin-left: 0px;
+            text-align: end;
+            font-size: 20px;
+
+        }
+        .row1{
+            margin-bottom: 5px;
+        }
+        button{
+            width:80px ;
+            height: 80px;
+            cursor: pointer;
+            border-radius: 4px;
+            
+        
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        
+        <div class="inner">
+                <input type="text">
+            <div class="row1">
+                <button onclick="cleardisplay()">C</button>
+                <button onclick="operator()">< -</button>
+                <button onclick="appenddata('/')" >/</button>
+                <button onclick="appenddata('*') ">x</button>
+            </div>
+            <div class="row1">
+                <button onclick="appenddata(7)">7</button>
+                <button onclick="appenddata(8)">8</button>
+                <button onclick="appenddata(9)">9</button>
+                <button onclick="appenddata('-')">-</button>
+            </div>
+            <div class="row1">
+                <button onclick="appenddata(4)">4</button>
+                <button onclick="appenddata(5)">5</button>
+                <button onclick="appenddata(6)">6</button>
+                <button onclick="appenddata('+')">+</button>
+            </div>
+            <div class="row1">
+                <button onclick="appenddata(1)" >1</button>
+                <button onclick="appenddata(2)">2</button>
+                <button onclick="appenddata(3)">3</button>
+                <button onclick="appenddata('%')">%</button>
+            </div>
+            <div class="row1">
+                <button onclick="appenddata(0)">0</button>
+                <button onclick="appenddata('00')">00</button>
+                <button onclick="appenddata('.')">.</button>
+                <button onclick="calculate('=')">=</button>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <script src="./calculator.js"></script>
+</body>
+</html>
