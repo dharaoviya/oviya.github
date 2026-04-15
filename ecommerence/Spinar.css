@@ -1,0 +1,27 @@
+.spin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spin>div{
+    width: 3em;
+    height: 3em ;
+    border-radius: 50%;
+    border: 10px solid black;
+    border-top: 10px solid red;
+    animation-name: spin;
+    animation-duration: 1s ;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
