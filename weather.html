@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            background-image: linear-gradient(yellow,white);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #inner{
+            border: 2px solid black;
+            height: 150px;
+            width: 250px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+
+            
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: capitalize;
+            font-weight: bold;
+            width: 100%;
+
+        }
+        #output{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="inner">
+            <input type="text" placeholder="enter the city name">
+            <button>search</button>
+        </div>
+        <div id="output"></div>
+    </section>
+    
+    <script src="./weather.js"></script>
+</body>
+</html>
